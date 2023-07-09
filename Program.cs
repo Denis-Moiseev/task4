@@ -6,8 +6,9 @@ Console.Write("Введите третье число: ");
 double thirdNumber = double.Parse(Console.ReadLine());
 double max = firstNumber;
 if (firstNumber < secondNumber)
+{
     max = secondNumber;
     if (secondNumber < thirdNumber)
         max = thirdNumber;
-
+}
 Console.Write($"Число { max } максимальное");
